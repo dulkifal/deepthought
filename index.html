@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deep thought</title>
+  </head>
+  <body>
+    <head>
+      <link rel="stylesheet" href="style.css" />
+    </head>
+    <nav>
+      <img src="assets/logo.svg" alt="" />
+      <ul>
+        <li class="blue-circle">
+          <a href="index.html">
+            <img src="assets/home.png" alt="home" />
+          </a>
+        </li>
+        <li class="blue-circle">
+          <a href="setting.html">
+            <img src="assets/tools.png" alt="tools" />
+          </a>
+        </li>
+        <li>
+          <a href="notification.html">
+            <img src="assets/notification.png" alt="notification" />
+          </a>
+        </li>
+        <li>
+          <a href="user.html">
+            <img src="assets/user.png" alt="user" />
+          </a>
+        </li>
+        <li>
+          <div class="dots"></div>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <sidebar> </sidebar>
+      <div class="container">
+        <div class="header">
+          <h2>Technical Project Management</h2>
+          <button>Submit task</button>
+        </div>
+        <div class="explore">
+          <h3>Explore the world of management</h3>
+          <p>As a project manager, you play an important reole in leading a project through initiation, planning, execution, monitoring, controlling and completion. How? Do you want to manage each and every step of your life?</p>
+
+        </div>
+        <div class="cards"></div>
+        <script>
+          let arry = [{
+            "title": "Project Management",
+            "description": "As a project manager, you play an important reole in leading a project through initiation, planning, execution, monitoring, controlling and completion. How? Do you want to manage each and every step of your life?",
+            "img": "assets/1.png"
+          },
+          {
+            "title": "Project Management",
+            "description": "As a project manager, you play an important reole in leading a project through initiation, planning, execution, monitoring, controlling and completion. How? Do you want to manage each and every step of your life?",
+            "img": "assets/1.png"
+          },
+          {
+            "title": "Project Management",
+            "description": "As a project manager, you play an important reole in leading a project through initiation, planning, execution, monitoring, controlling and completion. How? Do you want to manage each and every step of your life?",
+            "img": "assets/1.png"
+          },
+          {
+            "title": "Project Management",
+            "description": "As a project manager, you play an important reole in leading a project through initiation, planning, execution, monitoring, controlling and completion. How? Do you want to manage each and every step of your life?",
+            "img": "assets/1.png"
+          },
+         
+
+          ]
+          arry.map((item) => {
+            let div = document.createElement("div");
+            div.classList.add("card");
+            div.innerHTML = `
+            <div class="card-header">
+            <h3>${item.title}</h3>
+            <div class="tooltip">&#x1F6C8;</div>
+            </div>
+              div class="card-body">
+            <p> <b>Description</b>: ${item.description}</p>
+            <img src="${item.img}" alt="" />
+            </div>
+            `
+            document.querySelector(".cards").appendChild(div);
+          })
+        </script>
+      </div>
+      <sidebar> </sidebar>
+
+    </main>
+    <footer></footer>
+  </body>
+</html>
