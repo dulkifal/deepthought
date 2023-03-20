@@ -40,7 +40,25 @@
       </ul>
     </nav>
     <main>
-      <sidebar> </sidebar>
+      <sidebar id="expand"> 
+        <div class="card-header">
+          <h3>Journey Board</h3>
+
+          </div>
+          <div class="card-body">
+            <h2 class="one" id="one" onclick="expandthis()">1</h2>
+            <ul  >
+              <li>Explore the world of management</li>
+              <li>Technical Project Management</li>
+              <li>Threadbuild</li>
+              <li>Structure your Pointers</li>
+              <li>4SA Method</li>
+              
+            </ul>
+            
+            </div>
+      </sidebar>
+      <div></div>
       <div class="container">
         <div class="header">
           <h2>Technical Project Management</h2>
@@ -81,7 +99,7 @@
             </div>
             <div class="threads">
             <div class="sub-thread">
-               <p>Sub thread 1</p>
+               <h4>Sub thread 1</h4>
               <textarea name="sub-thead" id="sub-thead-1"   placeholder="Enter Text here"></textarea>
 
             </div>
@@ -90,7 +108,38 @@
               <textarea name="sub-thead" id="sub-thead-1" cols="10" rows="5" placeholder="Enter Text here"></textarea>
 
             </div>
+            <div class="sub-area">
+              <img src="assets/bulb.svg" alt="">
+              <img src="assets/message.svg" alt="">
+              <img src="assets/question.svg" alt="">
+              <img src="assets/book.svg" alt="">
+            </div>
+            <div class="select">
+              <div class="sub-select">
+                
+                <h5>Select Categ</h5>
+
+                  
+                
+
+              </div>
+              <div class="sub-select">
+                <h5>Select Proces</h5>
+               
+
+              </div>
+            </div>
+            
+            
+            <button class="block"> + Sub-thread</button>
           </div>
+         
+            <div class="sub-thread">
+              <h4>Summary for Thread A</h4>
+             <textarea name="sub-thead" id="sub-thead-1"   placeholder="Enter Text here"></textarea>
+
+           </div>
+        
           </div>
           </div>
         <div class="card">
@@ -102,7 +151,30 @@
             <p>
               <b>Description</b>: Write a 300 - 400 word article from your thread . Publish your understanding and showcase your understanding to the entire world
             </p>
-            <!-- <img src="assets/meet.png" alt="" /> -->
+           
+            <h3>Title</h3>
+            <input type="text">
+            <h3>Content</h3>
+            <div class="content-box">
+              <div class="content-header">
+                <a href="">File</a>
+                <a href="">Edit</a>
+                <a href="">View</a>
+                <a href="">Insert</a>
+                <a href="">Format</a>
+                <a href="">Tools</a>
+                
+                <a href="">Table</a>
+                <a href="">Help</a>
+              </div>
+              <div class="tools">
+                <img src="assets/left-arrow.svg" alt="">
+                <img src="assets/right.svg" alt="">
+                <img src="assets/zoom.svg" alt="">
+                <p>Paragragh</p>
+                <div class="dots verticle"></div>
+              </div>
+            </div>
           </div>
           </div>
         <div class="card">
@@ -114,7 +186,26 @@
             <p>
               <b>Description</b> : To Explore more read more
             </p>
-            <!-- <img src="assets/meet.png" alt="" /> -->
+            <div class="thread-header">
+              <i class="arrow down" id="arrow" onclick="toggleDownArrow()"></i>
+              <h3>Introduction </h3>
+            </div>
+              <p>The 4SA Method , How to bring a idea into progress ?</p>
+<p>See More</p>
+<div class="thread-header">
+  <i class="arrow down" id="arrow" onclick="toggleDownArrow()"></i>
+  <h3>Thread A</h3>
+</div>
+<p>How are you going to develop your stratergy ? Which method are you going to use to develop a stratergy ? What if the project is lengthy?</p>
+<p>See More</p>
+<div class="thread-header">
+  
+  <h3>Example 1</h3>
+  <p>You have a concept , How will you put into progress?</p>
+</div>
+
+            </div>
+
           </div>
           </div>
 

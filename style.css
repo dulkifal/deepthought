@@ -36,7 +36,17 @@ nav ul {
   padding-right: 1rem;
   margin: 0 2rem;
 }
-
+input{
+  border: none;
+   background: #FCFBFB;
+   box-shadow: -2px 2px 6px rgba(0, 0, 0, 0.15);
+   border-radius: 5px;
+   height: 43px;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
 .blue-circle {
   background-color: var(--blue-color);
   border-radius: 50%;
@@ -55,6 +65,51 @@ main {
   width: 100%;
   height: 100vh;
   background-color: var(--bg-color);
+}
+/* sidebar */
+sidebar {
+  grid-area: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--nav-color);
+  padding: 1rem 0;
+  height: 60vh;
+  
+ position: absolute;
+  top: 70px;
+  left: -300px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  
+}
+sidebar ul{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 1rem;
+  padding: 1rem 0;
+  list-style-type: circle;
+  list-style-position: inside;
+  margin: 0 2rem;
+
+}
+sidebar .one{
+  padding: 1rem;
+  border: #0029ff 1px solid;
+  border-radius: 10px;
+  
+  width: fit-content;
+  position: relative;
+  left: 300px;
+  top: -2px;
+  
+}
+.expand{
+ left: 0px;
+}
+.hide{
+  display: hidden;
 }
 .container {
   width: 100%;
@@ -77,7 +132,7 @@ main {
   letter-spacing: 0.02em;
   text-align: left;
 }
-.header button {
+ button {
   background-color: var(--font-blue);
   color: white;
   border: none;
@@ -131,7 +186,7 @@ main {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px -4px 4px rgba(0, 0, 0, 0.25);
   padding: 1rem;
 }
-.card .card-header {
+ .card-header {
   display: flex;
   flex-direction: row;
   background: black;
@@ -167,7 +222,9 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  align-items: center;
+  height: 100%;
+ 
+  justify-content: start;
   font-style: normal;
   font-size: 16px;
   line-height: 22px;
@@ -179,7 +236,16 @@ main {
   display: flex;
   gap: 1rem;
   align-items: center;
-  width: 100%;
+  width: 95%;
+  background: rgba(254, 255, 192, 0.2);
+border: 0.1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  padding: 1rem;
+}
+.thread-header h3{
+  font-weight: 700;
+font-size: 20px;
+  line-height: 27px;
 }
 .arrow {
   border: solid black;
@@ -197,10 +263,10 @@ main {
   -webkit-transform: rotate(-135deg);
 }
 .threads {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
+  gap: 1rem;
   width: 100%;
   justify-content: space-around;
 }
@@ -225,6 +291,77 @@ textarea {
   box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
 }
-.sub-thread p {
+.sub-thread h4 {
+   
   padding: 0.5rem;
+  color:#000;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.sub-area{
+  display: flex;
+justify-content: end;
+  gap: 1rem;
+  height: 30px;
+   
+}
+.select{
+  display: flex;
+  width: 100%;
+  font-size: 10px;
+  justify-content: space-around;
+  
+}
+.select .sub-select{
+  display: flex;
+  flex-direction: column;
+  
+  padding: 1rem;
+
+}
+.block{
+  justify-self: start;
+}
+
+.card-body  h3 , input{
+  width: 100%;
+}
+.content-box{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+  
+}
+.content-header{
+  display: flex;
+  gap: 1rem;
+   
+  align-items: center;
+  width: 100%;
+  margin: 1rem 0;
+}
+.content-header a{
+  color:#616161 ;
+}
+.content-box .tools{
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+.content-box .tools p{
+  font-size: 12px;
+  font-weight: 500;
+  
+  line-height: 18px;
+  color: #616161;
+  background: #EBEBEB;
+  padding: 0.5rem;
+
+}
+.verticle{
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
 }

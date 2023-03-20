@@ -6,4 +6,10 @@ function toggleDownArrow() {
   downArrow.classList.toggle('up');
 }
 
-console.log("index.js loaded");
+ function expandthis(){
+  var ul = document.getElementById('expand');
+  ul.classList.toggle('expand');
+  // hide the one with id one
+  var one = document.getElementById('one')
+  one.classList.toggle('hide');
+ }
